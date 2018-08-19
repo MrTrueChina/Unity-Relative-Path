@@ -35,48 +35,4 @@ public static class FilePath
                 return i;
         return 0;
     }
-
-
-    static string _contentPath;
-    static string contentPath
-    {
-        get
-        {
-            if (_contentPath != null)
-            {
-                return _contentPath;
-            }
-            else
-            {
-                _contentPath = GetContentPath();
-                return _contentPath;
-            }
-        }
-    }
-    static string GetContentPath()
-    {
-        return exePath + "content/";
-    }
-
-
-    static string _picPath;
-    public static string picPath
-    {
-        get
-        {
-            if (_picPath != null)
-            {
-                return _picPath;
-            }
-            else
-            {
-                _picPath = GetPicPath();
-                return _picPath;
-            }
-        }
-    }
-    static string GetPicPath()
-    {
-        return contentPath + "pic/";
-    }
 }
